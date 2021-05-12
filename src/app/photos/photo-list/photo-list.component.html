@@ -1,0 +1,4 @@
+<ap-search (onDigitacao)="filter = $event" [value]="filter"></ap-search>
+<ap-photos [photos]="photos | filterByDescription: filter"></ap-photos>
+
+<ap-load-button [hasMore]="hasMore"></ap-load-button>
