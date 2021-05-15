@@ -30,7 +30,7 @@ export class PhotoListComponent implements OnInit {
 
     //************************************************************************ */
     //DAQUI PRA BAIXO, é gambita por não ter conseguido rodar a API da alura
-    const userName = this.activateRoute.snapshot.params.usuario;
+    /*const userName = this.activateRoute.snapshot.params.usuario;
     if (userName === 'fabiano') {
       this.photos = [
         {
@@ -71,7 +71,7 @@ export class PhotoListComponent implements OnInit {
           description: 'Umbler',
         },
       ];
-    }
+    }*/
   }
 
   load() {
