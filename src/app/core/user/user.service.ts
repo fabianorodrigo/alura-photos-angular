@@ -22,6 +22,8 @@ export class UserService {
   //tinha ninguém para ouvir
   private userSubject = new BehaviorSubject<User>(null);
 
+  private userName: string;
+
   setToken(token: string) {
     this.tokenService.setToken(token);
     this.decodeAndNotify();
@@ -31,6 +33,7 @@ export class UserService {
     //o tokenService retorna do LocalStorage
     const token = this.tokenService.getToken();
     const user = jwt_decode.default(token) as User;
+    this.userName = user.userName;
     this.userSubject.next(user);
   }
 
@@ -39,8 +42,15 @@ export class UserService {
     this.userSubject.next(null);
   }
 
+  isLogged() {
+    return this.tokenService.hasToken();
+  }
+
   getUser() {
     //retornando observable, é possível fazer um subscribe
     return this.userSubject.asObservable();
+  }
+  getUserName() {
+    return this.userName;
   }
 }

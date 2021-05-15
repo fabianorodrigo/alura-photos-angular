@@ -4,7 +4,7 @@
         <div *ngIf="user; else login">
             <i class="fa fa-user-circle"></i>
             <a class="ml-2">{{ user?.userName }}</a>
-            <a (click)="logout()">Logout</a>
+            <a (click)="logout()"> (Logout)</a>
         </div>
 
         <ng-template #login>
