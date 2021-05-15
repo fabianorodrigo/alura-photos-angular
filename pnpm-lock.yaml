@@ -24,6 +24,7 @@ specifiers:
   font-awesome: ^4.7.0
   jasmine-core: ~3.6.0
   jasmine-spec-reporter: ~5.0.0
+  jwt-decode: ^3.1.2
   karma: ~6.1.0
   karma-chrome-launcher: ~3.1.0
   karma-coverage: ~2.0.3
@@ -48,6 +49,7 @@ dependencies:
   '@angular/router': 11.2.12_c3b940524028f1b37d81886a900a4007
   bootstrap: 4.6.0
   font-awesome: 4.7.0
+  jwt-decode: 3.1.2
   rxjs: 6.6.7
   tslib: 2.2.0
   zone.js: 0.11.4
@@ -5566,6 +5568,10 @@ packages:
       readable-stream: 2.3.7
       set-immediate-shim: 1.0.1
     dev: true
+
+  /jwt-decode/3.1.2:
+    resolution: {integrity: sha512-UfpWE/VZn0iP50d8cz9NrZLM9lSWhcJ+0Gt/nm4by88UL+J1SiKN8/5dkjMmbEzwL2CAe+67GsegCbIKtbp75A==}
+    dev: false
 
   /karma-chrome-launcher/3.1.0:
     resolution: {integrity: sha512-3dPs/n7vgz1rxxtynpzZTvb9y/GIaW8xjAwcIGttLbycqoFtI7yo1NGnQi6oFTherRE+GIhCAHZC4vEqWGhNvg==}
